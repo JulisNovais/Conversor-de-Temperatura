@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+  <h1>Conversor de temperatura - Celsius para Fahrenheit ou Kelvin</h1>
+
+  <fieldset>
+    <div>
+      <label>Selecione a unidade:</label>
+      <select name="tempType" id="tempType">
+        <option selected>Selecione</option>
+        <option id="fahrenheit" value="f">Fahrenheit</option>
+        <option id="kelvin" value="k">Kelvin</option>
+      </select>
+  
+      <div class="temp">
+        <label>Temperatura</label>
+        <input placeholder="Informe a temperatura" type="number" id="temperatura">
+      </div>
+  
+    <button id="button" type="button" onclick="converter()">Converter</button>
+    </div>
+  
+    <h1 id="resultado"></h1></h1>
+  </fieldset>
+
+  <script src="./script.js"></script>
+</body>
+</html>
